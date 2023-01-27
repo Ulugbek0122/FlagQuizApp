@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flag6"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#D200DE59"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Toolbar
+            android:gravity="center_vertical"
+            android:id="@+id/tol"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+
+            <ImageView
+                android:id="@+id/back_btn_bar"
+                android:padding="8dp"
+                android:src="@drawable/ic_back_svgrepo_com__1_"
+                android:background="@drawable/back_btn_tol"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ImageView
+                android:id="@+id/home_btn_bar"
+                android:layout_marginLeft="30dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_home_svgrepo_com"
+                android:background="@drawable/back_btn_tol"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:id="@+id/tv_bar"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                tools:text="14/55"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:padding="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="end"
+                android:background="@drawable/back_btn_tol"
+                android:layout_width="90dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:padding="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_light_bulb_svgrepo_com"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/ball"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="10"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </Toolbar>
+
+
+        <ImageButton
+            android:id="@+id/image_btn_back1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_back1"
+            app:layout_constraintBottom_toBottomOf="@id/image_1"
+            app:layout_constraintRight_toLeftOf="@id/image_1"
+            app:layout_constraintTop_toTopOf="@id/image_1"
+            app:layout_constraintWidth_percent="0.1" />
+
+        <ImageButton
+            android:layout_marginRight="2dp"
+            android:id="@+id/image_btn_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_back"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_svgrepo_com"
+            app:layout_constraintBottom_toBottomOf="@id/image_question"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintRight_toLeftOf="@id/image_question"
+            app:layout_constraintTop_toTopOf="@id/image_question"
+            app:layout_constraintWidth_percent="0.1" />
+
+
+        <ImageView
+            android:background="@drawable/back_question1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/image_1"
+            app:layout_constraintBottom_toBottomOf="@id/image_question"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/image_question"
+            app:layout_constraintWidth_percent="0.5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+        <ImageView
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginTop="30dp"
+            android:id="@+id/image_question"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/back_image"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qozogiston"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tol"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <ImageButton
+            android:id="@+id/image_btn_next1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_next1"
+            app:layout_constraintBottom_toBottomOf="@id/image_1"
+            app:layout_constraintLeft_toRightOf="@id/image_1"
+            app:layout_constraintTop_toTopOf="@id/image_1"
+            app:layout_constraintWidth_percent="0.1" />
+
+
+
+        <ImageButton
+            android:layout_marginLeft="2dp"
+            android:id="@+id/image_btn_next"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_next"
+            android:padding="10dp"
+            android:src="@drawable/ic_next_svgrepo_com"
+            app:layout_constraintBottom_toBottomOf="@id/image_question"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintLeft_toRightOf="@id/image_question"
+            app:layout_constraintTop_toTopOf="@id/image_question"
+            app:layout_constraintWidth_percent="0.1" />
+
+
+        <LinearLayout
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginTop="60dp"
+            app:layout_constraintHeight_percent="0.16"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/variant"
+            app:layout_constraintBottom_toTopOf="@id/clear_liner"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_question"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:id="@+id/layout_btn_ansver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_btn_ansver1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/ButtonAnswer"
+                    android:text="a" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintHeight_percent="0.1"
+            android:orientation="horizontal"
+            android:id="@+id/clear_liner"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/layout_variaant"
+            app:layout_constraintTop_toBottomOf="@id/variant"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_vertical"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:id="@+id/btn_yordam"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="30dp">
+
+
+                <ImageView
+                    android:background="@drawable/back_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_light_bulb_svgrepo_com" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="end|center_vertical"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:id="@+id/btn_clear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="30dp">
+
+
+                <ImageView
+                    android:background="@drawable/back_card"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_delete_svgrepo_com"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_variaant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@id/layout_variaant1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clear_liner">
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_variaant1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_variaant">
+
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/ButtonVariant" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:shadowRadius="10"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowColor="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="ЮЖНАЯ КОРЕА"
+            android:id="@+id/win_tv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/win_img"
+            app:layout_constraintTop_toBottomOf="@id/image_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginTop="80dp"
+            android:padding="20dp"
+            android:background="@drawable/win_img"
+            android:src="@drawable/ic_ok_svgrepo_com"
+            app:layout_constraintBottom_toTopOf="@id/win_img_achko"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/win_tv"
+            android:id="@+id/win_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:id="@+id/tekst_win"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:text="+1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/win_img_achko"
+            app:layout_constraintBottom_toBottomOf="@id/win_img_achko"
+            app:layout_constraintTop_toTopOf="@id/win_img_achko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@drawable/ic_light_bulb_svgrepo_com__1_"
+            android:layout_marginTop="40dp"
+            android:id="@+id/win_img_achko"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tekst_win"
+            app:layout_constraintTop_toBottomOf="@id/win_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
